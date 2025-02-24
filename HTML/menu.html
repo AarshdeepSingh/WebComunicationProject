@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../CSS/menu-style.css" rel="stylesheet" />
+    <link href="../CSS/home-page-style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header -->    
+<header class="header">
+    <img src="restaurant-logo.png" alt="Restaurant Logo" class="logo">
+    
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+        <a href="../HTML/home-page.html">Home</a>
+        <a href="../HTML/menu.html">Menu</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Restaurant Menu</h1>
+    <div class="navbar">
+        <button onclick="showMenu('pizza')">Pizza</button>
+        <button onclick="showMenu('drinks')">Drinks</button>
+        <button onclick="showMenu('desserts')">Desserts</button>
+    </div>
+
+    <div id="pizza" class="menu-section active" class="menu-section">
+        <h2>Pizza</h2>
+        <div class="menu-item">
+            <span class="name">Shahi Paneer pizza (shahi gravy on dough with paneer and green pepper)</span>
+            <span class="price">$19.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Butter Chicken Pizza (Butter chicken, red onion and green pepper)</span>
+            <span class="price">$19.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Mini Pepperoni Pizza</span>
+            <span class="price">$12.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Meat Lover Pizza (cheese, becon, ham and sausage)</span>
+            <span class="price">$19.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Canadian Pizza (pepperoni, becon, mushrooms and green pepper)</span>
+            <span class="price">$19.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Samosa Pizza (samosa on pizza with onion, tomato and chilli flakes)</span>
+            <span class="price">$19.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Hawaiian Pizza (Ham and pineapple on a tomato sauce base)</span>
+            <span class="price">$19.99</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Garden Pizza (green pepper, onions, Tomato, olives, mashrooms)</span>
+            <span class="price">$17.99</span>
+        </div>
+    </div>
+
+    <div id="drinks" class="menu-section">
+        <h2>Drinks</h2>
+        <div class="menu-item">
+            <span class="name">Coke</span>
+            <span class="price">$1.50</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Orange Juice</span>
+            <span class="price">$2.00</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Coffee</span>
+            <span class="price">$2.50</span>
+        </div>
+    </div>
+
+    <div id="desserts" class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <span class="name">Cheesecake</span>
+            <span class="price">$4.50</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Chocolate Mousse</span>
+            <span class="price">$5.00</span>
+        </div>
+        <div class="menu-item">
+            <span class="name">Tiramisu</span>
+            <span class="price">$5.50</span>
+        </div>
+    </div>
+
+</main>
+
+<!-- footer -->
+  <footer id="small-footer">
+    © 2025 Bestmates Eatery
+  </footer>
+  
+
+<script>
+   function showMenu(menu) {
+    const sections = document.querySelectorAll('.menu-section');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+    const selectedSection = document.getElementById(menu);
+    selectedSection.classList.add('active');
+}
+
+</script>
+</body>
+</html>

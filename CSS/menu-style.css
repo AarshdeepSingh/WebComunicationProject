@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.navbar button {
+    padding: 10px 20px;
+    background-color: #007b7f;
+    border: 3px solid #f9c80e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.navbar button:hover {
+    background-color: #f9c80e;
+}
+.menu-section {
+    display: none;
+}
+.menu-section.active {
+    display: block; 
+}
+
+main h1 {
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    color: #ff6200;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #007b7f;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.menu-item .name {
+    flex: 1; 
+}
+.menu-item .price {
+    margin-left: 20px;
+    font-weight: bold;
+}
