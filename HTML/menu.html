@@ -19,18 +19,19 @@
 </header>
 
 <div class="layout">
-<div class="side-navbar" id="sideNavbar">
-    <div class="menu-toggle" onclick="toggleMenu(this)">
+    <div class="side-navbar" id="sideNavbar">
+      <div class="menu-toggle" onclick="toggleMenu(this)">
         <div class="bar"></div>
-    </div>
-    <div class="menu-items" id="menuItems">
+      </div>
+      
+      <div class="menu-items" id="menuItems">
         <button onclick="showMenu('pizza')">🍕 Pizza</button>
         <button onclick="showMenu('from the fryer')">🍟 From the Fryer</button>
         <button onclick="showMenu('desserts')">🍰 Desserts</button>
         <button onclick="showMenu('drinks')">🥤 Drinks</button>
+      </div>
     </div>
-</div>
-
+      
 <div class="content-wrapper">
 <main>
     <h1>Restaurant Menu</h1>
@@ -207,7 +208,17 @@
 
         void target.offsetWidth;
         target.classList.add('animate');
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
     }
+
+    window.addEventListener('DOMContentLoaded', () => {
+    showMenu('pizza');
+  });
 </script>
 
 

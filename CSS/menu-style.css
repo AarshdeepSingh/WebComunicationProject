@@ -85,15 +85,24 @@ main h1 {
 
 .menu-items {
     margin-top: 30px;
-    display: none;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
 }
 
 .side-navbar.expanded .menu-items {
-    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    height: auto;
 }
+
 
 .menu-items button {
     background: none;
@@ -192,47 +201,102 @@ main h1 {
     transform: translateY(0);
 }
 
-/* Responsive */
+/* Responsive design */
+
 @media (max-width: 768px) {
-    .menu-item {
-        flex-direction: column;
-        text-align: center;
+    body {
+      flex-direction: column;
     }
-
-    .menu-item img {
-        margin: 15px 0 0 0;
-    }
-
-    .menu-item .text-content {
-        max-width: 100%;
-    }
-
+  
     main {
-        margin-left: 0;
-        padding: 10px;
+      margin-left: 0;
+      padding: 15px;
     }
-
+  
+    main h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .layout {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  
+    .content-wrapper {
+      margin-left: 0;
+      padding: 0 10px;
+    }
+  
     .side-navbar {
-        position: absolute;
-        height: auto;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 0;
+      background-color: #000;
+      z-index: 1000;
     }
-
-    .side-navbar.expanded {
-        width: 100%;
+  
+    .menu-toggle {
+      display: none;
     }
-
+  
     .menu-items {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 10px;
+      opacity: 1;
+      height: auto;
+      transform: none;
+      pointer-events: auto;
+      padding: 10px 0;
     }
-
+  
     .menu-items button {
-        padding: 10px;
-        font-size: 14px;
+      font-size: 14px;
+      padding: 8px 14px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.3s;
     }
-}
+  
+    .menu-items button:hover {
+      background-color: #333;
+      color: #cfa670;
+    }
+  
+    .menu-section h2 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  
+    .menu-item {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      padding: 15px;
+      margin: 15px auto;
+    }
+  
+    .menu-item img {
+      margin: 15px 0 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  
+    .menu-item .text-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  

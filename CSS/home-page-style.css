@@ -215,3 +215,71 @@ body {
 #big-footer p {
   margin: 0.2rem;
 }
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 7em;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #hero-section {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  #hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero-section p {
+    font-size: 2rem;
+  }
+
+  #intro-section img {
+    width: 90%;
+  }
+
+  #restaurant-specials-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #restaurant-specials-images img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  #why-choose-us-text {
+    grid-template-columns: 1fr;
+  }
+
+  #big-footer h3 {
+    font-size: 1.2rem;
+  }
+
+  #big-footer p,
+  #small-footer {
+    font-size: 0.9rem;
+  }
+}
