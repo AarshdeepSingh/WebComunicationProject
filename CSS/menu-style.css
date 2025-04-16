@@ -121,6 +121,28 @@ main h1 {
     color: #cfa670;
 }
 
+  
+.menu-items .ubereats-button {
+  display: block;
+  background-color: #3FC060;
+  color: #162328;
+  padding: 12px;
+  margin: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-items .ubereats-button:hover {
+  background-color: #3FC060;
+  color: #162328;
+  transform: translateY(-2px) scale(1.08);
+}
+
+
 .menu-section {
     display: none;
 }
@@ -273,7 +295,6 @@ main h1 {
       background-color: #333;
       color: #cfa670;
     }
-  
     .menu-section h2 {
       font-size: 1.3rem;
       text-align: center;
