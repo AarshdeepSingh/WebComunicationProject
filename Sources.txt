@@ -1,5 +1,19 @@
 Images source
 
+
+Home page images:
+
+background image: https://www.mashed.com/img/gallery/the-reason-you-should-share-food-when-dining-at-an-indian-restaurant/l-intro-1706804934.jpg
+
+
+Contact Us images:
+
+background image: https://hero-and-leander.com/wp-content/uploads/2016/05/sindhu-6388.jpg
+
+
+
+Menu page Images: 
+
 shahi paneer pizza: https://mrsinghscurrypizza.com/wp-content/uploads/2023/11/shahi-paneer-pizza.webp
 butter chicken pizza: https://nishkitchen.com/wp-content/uploads/2016/05/butter-chicken-pizza-3-B.jpg
 mini pepperoni pizza: https://www.simplyrecipes.com/thmb/rLl58QZmVP4C3zSlpkKBo72EUws=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg

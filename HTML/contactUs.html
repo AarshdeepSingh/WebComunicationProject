@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bestmates Eatery</title>
+    <link rel="stylesheet" href="../CSS/home-page-style.css">
+    <link rel="stylesheet" href="../CSS/contact-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <img src="../Images/navbarLogo.png" alt="Restaurant Logo" class="logo">
+        
+        <nav class="nav-links">
+            <a href="../HTML/home-page.html">Home</a>
+            <a href="../HTML/menu.html">Menu</a>
+            <a href="../HTML/contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="contact-hero" data-aos="fade-up">
+        <div class="hero-text">
+            <h1>Contact Us</h1>
+            <p>Have questions, suggestions, or just want to say hello? We're here for you!</p>
+        </div>
+    </section>
+
+    <section class="contact-form-section" data-aos="fade-up">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message here" required></textarea>
+        
+            <button type="submit">Send Message</button>
+        </form>
+        
+        
+    </section>
+
+    <div class="contact-info-container" data-aos="fade-up">
+        <section class="contact-info">
+            <h2>Our Location</h2>
+            <p>4691 Wyandotte St E, Windsor, ON N8Y 1H6</p>
+        </section>
+    
+        <section class="contact-info">
+            <h2>Call Us</h2>
+            <p>+1 (289) 221-2601</p>
+        </section>
+    </div>
+    
+    <footer id="small-footer">
+        © 2025 Bestmates Eatery
+      </footer>
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("48kw25ZQ91AdAEmjv");
+  })();
+
+  document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_adhho4p", "template_69tvmos", this)
+      .then(function() {
+        alert("Message sent successfully!");
+        e.target.reset();
+      }, function(error) {
+        alert("Failed to send message: " + JSON.stringify(error));
+      });
+  });
+  
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+  });
+</script>
+
+</body>
+</html>

@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
     <link href="../CSS/menu-style.css" rel="stylesheet" />
     <link href="../CSS/home-page-style.css" rel="stylesheet" />
 </head>
-<body>
-    <!-- header -->    
+<body>  
 <header class="header">
-    <img src="restaurant-logo.png" alt="Restaurant Logo" class="logo">
+    <img src="../Images/navbarLogo.png" alt="Restaurant Logo" class="logo">
     
-    <!-- Navigation Links -->
     <nav class="nav-links">
         <a href="../HTML/home-page.html">Home</a>
         <a href="../HTML/menu.html">Menu</a>
-        <a href="#">Contact Us</a>
+        <a href="../HTML/contactUs.html">Contact Us</a>
     </nav>
 </header>
 
@@ -166,8 +164,7 @@
 
         const target = document.getElementById(sectionId);
         target.classList.add('active');
-
-        // Trigger reflow to allow re-adding the animation
+        
         void target.offsetWidth;
         target.classList.add('animate');
     }

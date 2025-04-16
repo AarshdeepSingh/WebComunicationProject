@@ -1,5 +1,7 @@
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
 
 /* Global Reset */
 * {
@@ -11,59 +13,33 @@
 
 /* Body */
 body {
-  background-color: #fef5da;
-  color: #2a2a2a;
+  background-color: #ffffff;
+  color: #000000;
   line-height: 1.6;
   min-height: 100vh;
-  padding-top: 60px; /* Prevent content from being hidden under the fixed header */
+  padding-top: 60px;
 }
 
 /* Header Styling */
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  background-color: #201f1f;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-} */
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   height: 70px;
   width: 100%;
-  background-color: #201f1f;
+  background-color: #1b1b1b;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* higher than sidebar */
-}
-
-/* SIDEBAR below the header */
-.side-navbar {
-  position: fixed;
-  top: 70px; /* ✅ pushes below the fixed header */
-  left: 0;
-  width: 60px;
-  height: calc(100vh - 70px); /* ✅ leaves room for the header */
-  background-color: #007b7f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: width 0.3s;
-  z-index: 900;
+  z-index: 1000;
 }
 
 /* Logo */
 .logo {
-  width: 60px;
+  width: 9em;
+  height: auto;
 }
 
 /* Navigation Links */
@@ -83,13 +59,13 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ff6200;
+  color: #cfa670;
 }
 
 /* Hero Section */
 #hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url('../Images/hero.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url('../Images/homePageHeroImage.jpg') no-repeat center center/cover;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -101,15 +77,15 @@ body {
 }
 
 #hero-section h1 {
+  font-family: 'Great Vibes', cursive;
   font-size: 3rem;
   font-weight: 700;
-  color: #ff6200;
+  color: #cfa670;
 }
 
 #hero-section p {
   max-width: 700px;
-  font-size: 1.2rem;
-  margin-top: 15px;
+  font-size: 5em;
 }
 
 /* Intro Section */
@@ -119,13 +95,13 @@ body {
 }
 
 #intro-section h1 {
-  color: #ff6200;
+  color: #cfa670;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 #intro-section h2 {
-  color: #007b7f;
+  color: #1a3853;
   font-size: 1.8rem;
 }
 
@@ -145,13 +121,13 @@ body {
 
 /* Restaurant Specials */
 #restaurant-specials {
-  background-color: #f9c80e;
+  background-color: #cfa670;
   text-align: center;
   padding: 50px 5%;
 }
 
 #restaurant-specials h2 {
-  color: #ff6200;
+  color: #1a3853;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -182,7 +158,7 @@ body {
 
 #why-choose-us h2 {
   font-size: 2rem;
-  color: #ff6200;
+  color: #1a3853;
   font-weight: 700;
 }
 
@@ -200,11 +176,11 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-left: 5px solid #007b7f;
+  border-left: 5px solid #1a3853;
 }
 
 #why-choose-us article h3 {
-  color: #ff6200;
+  color: #cfa670;
   font-size: 1.4rem;
 }
 
@@ -216,23 +192,23 @@ body {
 
 /* Footer */
 #small-footer {
-  background-color: #201f1f;
-  color: white;
+  background-color: #1b1b1b;
+  color: #999999;
   text-align: center;
   padding: 10px 0;
   font-size: 1rem;
 }
 
 #big-footer {
-  background-color: #333;
-  color: white;
+  background-color: #333333;
+  color: #999999;
   text-align: center;
   padding-bottom: 1rem;
 }
 
-#big-footer h2 {
+#big-footer h3 {
   margin: 0.5rem;
-  color: #ff6200;
+  color: #cfa670;
   font-size: 1.5rem;
 }
 
