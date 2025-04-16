@@ -12,7 +12,7 @@
     <img src="../Images/navbarLogo.png" alt="Restaurant Logo" class="logo">
     
     <nav class="nav-links">
-        <a href="../HTML/home-page.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="../HTML/menu.html">Menu</a>
         <a href="../HTML/contactUs.html">Contact Us</a>
     </nav>
@@ -25,6 +25,7 @@
     </div>
     <div class="menu-items" id="menuItems">
         <button onclick="showMenu('pizza')">🍕 Pizza</button>
+        <button onclick="showMenu('from the fryer')">🍟 From the Fryer</button>
         <button onclick="showMenu('desserts')">🍰 Desserts</button>
         <button onclick="showMenu('drinks')">🥤 Drinks</button>
     </div>
@@ -90,6 +91,45 @@
                 <span class="price">$17.99</span>
             </div>
             <img src="../Images/gardenPizza.jpeg" alt="Garden Pizza">
+        </div>
+    </div>
+
+    <div id="from the fryer" class="menu-section">
+        <h2>From the Fryer</h2>
+        <div class="menu-item">
+            <div class="text-content">
+                <span class="name">Fries</span>
+                <span class="price">$4.99</span>
+            </div>
+            <img src="../Images/fries.jpg" alt="Rasmalai">
+        </div>
+        <div class="menu-item">
+            <div class="text-content">
+                <span class="name">Potato Wedges</span>
+                <span class="price">$7.99</span>
+            </div>
+            <img src="../Images/PotatoWedges.jpg" alt="Gulab Jamun">
+        </div>
+        <div class="menu-item">
+            <div class="text-content">
+                <span class="name">Jalapeno Poppers (12 pcs)</span>
+                <span class="price">$12.99</span>
+            </div>
+            <img src="../Images/JalapenoPoppers.jpg" alt="Carrot Halwa">
+        </div>
+        <div class="menu-item">
+            <div class="text-content">
+                <span class="name">Onion Rings</span>
+                <span class="price">$6.99</span>
+            </div>
+            <img src="../Images/onionRings.jpg" alt="Carrot Halwa">
+        </div>
+        <div class="menu-item">
+            <div class="text-content">
+                <span class="name">Chicken Tenders (6 pcs)</span>
+                <span class="price">$10.99</span>
+            </div>
+            <img src="../Images/ChickenTenders.jpg" alt="Carrot Halwa">
         </div>
     </div>
     
@@ -164,7 +204,7 @@
 
         const target = document.getElementById(sectionId);
         target.classList.add('active');
-        
+
         void target.offsetWidth;
         target.classList.add('animate');
     }

@@ -23,6 +23,13 @@ samosa pizza: https://savoryreviews.com/wp-content/uploads/2010/05/pic14.jpg
 hawaiian pizza: https://static01.nyt.com/images/2023/03/29/multimedia/23HAMREX2-pineapple-ham-pizza-qwct/HAMREX2-pineapple-ham-pizza-qwct-superJumbo.jpg
 garden pizza: https://www.killingthyme.net/wp-content/uploads/2020/08/veggie-deluxe-pizza-768x512.jpg
 
+
+chicken tenders: https://www.wellplated.com/wp-content/uploads/2023/05/Oven-Fried-Chicken-Tenders-Recipe.jpg
+onion rings: https://cuban.recipes/wp-content/uploads/2019/08/onion-rings-recipe.jpg
+jalapeno poppers: https://www.thespruceeats.com/thmb/GirkcVchuTJfI6N-XJ594n80ec8=/2121x1414/filters:fill(auto,1)/Jalapeno-Poppers-58a727e85f9b58a3c955b1ab.jpg
+potato wedges: https://www.primaverakitchen.com/wp-content/uploads/2021/11/Air-fryer-Potato-Wedges-Primavera-Kitchen-3.jpg
+fries: https://www.thespruceeats.com/thmb/X_JGM04VusvkuGqTVan4QmBRqjI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-make-homemade-french-fries-2215971-hero-01-02f62a016f3e4aa4b41d0c27539885c3.jpg
+
 Rasmalai: https://www.archanaskitchen.com/images/archanaskitchen/1-Author/moumita.malla-gmail.com/traditional_rasmalai_recipe.jpg
 gulab jamun: https://www.mydelicious-recipes.com/home/OGImage/282/MyDelicious-Recipes-Image/ 
 carrot halwa: https://www.curryflow.com/wp-content/uploads/2019/09/Carrot_Halwa_Recipe-0834.jpg
